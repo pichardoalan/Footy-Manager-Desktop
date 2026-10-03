@@ -26,3 +26,6 @@ Para compilar este proyecto por tu cuenta, necesitas tener instalado:
    ```bash
    git clone [https://github.com/pichardoalan/Footy-Manager-Desktop.git](https://github.com/pichardoalan/Footy-Manager-Desktop.git)
    cd Footy-Manager-Desktop
+   1. **Clonar el repositorio:**
+   git clone [https://github.com/pichardoalan/Footy-Manager-Desktop.git](https://github.com/pichardoalan/Footy-Manager-Desktop.git)
+   cd Footy-Manager-Desktop
