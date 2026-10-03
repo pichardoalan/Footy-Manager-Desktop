@@ -1,0 +1,24 @@
+{
+  "name": "footy-manager",
+  "version": "1.0.0",
+  "description": "Juego de simulación de fútbol",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "Aidan O'Hara (Empaquetado por Alan Pichardo Villavicencio)",
+  "license": "ISC",
+  "build": {
+    "appId": "com.footymanager.local",
+    "productName": "Footy Manager",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "icono.ico",
+      "target": "portable"
+    }
+  }
+}
