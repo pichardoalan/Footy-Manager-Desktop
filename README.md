@@ -38,8 +38,3 @@ npm start
 npm run build
 
 El archivo ejecutable portable se creará en la carpeta dist/.
-
-### 5. Guarda el archivo en VS Code y sube la versión final con:
-git add README.md
-git commit -m "docs: corregir formato de texto plano en README"
-git push
