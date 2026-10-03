@@ -1,31 +1,45 @@
 # Footy Manager Desktop ⚽🌍
 
-Una versión de escritorio independiente del simulador web [Footy Manager: World Stage](https://footy-manager.com/). 
+Versión de escritorio independiente del simulador web [Footy Manager: World Stage](https://footy-manager.com/).
 
-Este proyecto utiliza **Electron** para encapsular el juego web original en una aplicación nativa para Windows (`.exe`). El objetivo principal de esta implementación es solucionar los problemas de pérdida de datos ocasionados por las políticas de limpieza de caché y `localStorage` de los navegadores web modernos, garantizando un **guardado local persistente y seguro** a través de particiones de Electron.
+Este proyecto empaqueta el juego original en una aplicación nativa para Windows (.exe) mediante Electron, garantizando guardado local persistente a través de particiones de almacenamiento aisladas.
 
-## ⚠️ Créditos y Aviso Legal
-* **Creador del juego original (Lógica, UI y código base):** Aidan O'Hara
-* **Arquitectura de Escritorio y Empaquetado:** Alan Pichardo Villavicencio
+---
 
-Este repositorio no busca apropiarse del juego original. Únicamente proporciona un contenedor de escritorio configurado para mejorar la experiencia de usuario mediante la persistencia de datos offline.
+## ⚠️ Créditos
+* **Juego Original (Lógica, UI y mecánicas):** Aidan O'Hara
+* **Empaquetado y Persistencia de Escritorio:** Alan Pichardo Villavicencio
 
-## ✨ Características
-* **Partidas Seguras:** Utiliza `persist:footy-manager` en Electron para asegurar que tu avance nunca se borre al cerrar la aplicación.
-* **App Independiente:** Ventana de juego limpia, sin barras de navegación ni distracciones.
-* **Portable:** Se compila como un ejecutable `.exe` único que puedes llevar en una USB sin necesidad de instalación.
+---
 
-## 🛠️️ Requisitos Previos
-Para compilar este proyecto por tu cuenta, necesitas tener instalado:
-* [Node.js](https://nodejs.org/) (incluye npm)
-* Git
+## 🎮 Cómo Jugar (Usuarios)
 
-## 🚀 Instalación y Uso
+1. En la barra lateral derecha de este repositorio, ve a la sección **Releases**.
+2. Descarga el archivo ejecutable **Footy Manager.exe**.
+3. Ejecútalo directamente con doble clic. No requiere instalación y las partidas se guardan de forma automática en tu equipo.
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/pichardoalan/Footy-Manager-Desktop.git](https://github.com/pichardoalan/Footy-Manager-Desktop.git)
-   cd Footy-Manager-Desktop
-   1. **Clonar el repositorio:**
-   git clone [https://github.com/pichardoalan/Footy-Manager-Desktop.git](https://github.com/pichardoalan/Footy-Manager-Desktop.git)
-   cd Footy-Manager-Desktop
+---
+
+## 💻 Para Desarrolladores (Compilación manual)
+
+Si deseas clonar el proyecto y compilar el binario por tu cuenta:
+
+### 1. Clonar el repositorio
+git clone https://github.com/pichardoalan/Footy-Manager-Desktop.git
+cd Footy-Manager-Desktop
+
+### 2. Instalar dependencias
+npm install
+
+### 3. Probar en modo desarrollo
+npm start
+
+### 4. Generar el ejecutable (.exe)
+npm run build
+
+El archivo ejecutable portable se creará en la carpeta dist/.
+
+### 5. Guarda el archivo en VS Code y sube la versión final con:
+git add README.md
+git commit -m "docs: corregir formato de texto plano en README"
+git push
